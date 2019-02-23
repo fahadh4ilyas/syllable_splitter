@@ -10,8 +10,7 @@ class SyllableSplitter:
                           
         self.double_consonant = ['ks','rt','rs','ll']+(double_consonant or [])
         
-        self.vocal = ['a','e','i','o','u',
-                      'ai','au','ei','oi']+(vocal or [])
+        self.vocal = ['a','e','i','o','u']+(vocal or [])
         
     def split_letters(self,string):
         letters = []
