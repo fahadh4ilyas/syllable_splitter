@@ -20,9 +20,9 @@ class SyllableSplitter:
         while string != '':
             letter = string[:2]
             
-            if letter in self.double_consonant:
+            if letter.lower() in self.double_consonant:
             
-                if string[2:] != '' and string[2] in self.vocal:
+                if string[2:] != '' and string[2].lower() in self.vocal:
                     letters += [letter[0]]
                     arrange += ['c']
                     string = string[1:]
@@ -32,12 +32,12 @@ class SyllableSplitter:
                     arrange += ['c']
                     string = string[2:]
                     
-            elif letter in self.consonant:
+            elif letter.lower() in self.consonant:
                 letters += [letter]
                 arrange += ['c']
                 string = string[2:]
                 
-            elif letter in self.vocal:
+            elif letter.lower() in self.vocal:
                 letters += [letter]
                 arrange += ['v']
                 string = string[2:]
@@ -45,12 +45,12 @@ class SyllableSplitter:
             else:
                 letter = string[0]
                 
-                if letter in self.consonant:
+                if letter.lower() in self.consonant:
                     letters += [letter]
                     arrange += ['c']
                     string = string[1:]
                     
-                elif letter in self.vocal:
+                elif letter.lower() in self.vocal:
                     letters += [letter]
                     arrange += ['v']
                     string = string[1:]
