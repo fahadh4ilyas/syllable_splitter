@@ -8,8 +8,8 @@ from SyllableSplitter import SyllableSplitter
 
 ss = SyllableSplitter()
 
-ss.split_syllables("aku dan kamu ekstra hari jum'at")
-#['a', 'ku', ' ', 'dan', ' ', 'ka', 'mu', ' ', 'eks', 'tra', ' ', 'ha', 'ri', 'jum', "'", 'at']
+ss.split_syllables("aku dan kamu. ekstra hari jum'at!")
+#['a', 'ku', ' ', 'dan', ' ', 'ka', 'mu', '.', ' ', 'eks', 'tra', ' ', 'ha', 'ri', 'jum', "'", 'at', '!']
 ```
 
 ### CAUTION!
