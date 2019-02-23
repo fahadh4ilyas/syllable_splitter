@@ -6,9 +6,10 @@ class SyllableSplitter:
         self.consonant = ['b','c','d','f','g','h','j',
                           'k','l','m','n','p','q','r',
                           's','t','v','w','x','y','z',
-                          'ng','ny','sy','kh','ch','ph']+(consonant or [])
+                          'ng','ny','sy','ch','dh','gh',
+                          'kh','ph','sh','th']+(consonant or [])
                           
-        self.double_consonant = ['ks','rt','rs','ll']+(double_consonant or [])
+        self.double_consonant = ['ll','ks','rs','rt']+(double_consonant or [])
         
         self.vocal = ['a','e','i','o','u']+(vocal or [])
         
